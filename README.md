@@ -30,11 +30,11 @@ make
 
 ./client
 
-NOTE: To run multiple clients, run the above command in a new terminal window for each client
+**NOTE**: To run multiple clients, run the above command in a new terminal window for each client
 
 <----------------------------------------------------------->
 
-NOTE: My system can handle atmost 20 login connections and 20 registration connections simultaneously at a time.
+**NOTE**: My system can handle atmost 20 login connections and 20 registration connections simultaneously at a time.
 
 The code has 2 test cases for
 
@@ -44,6 +44,7 @@ The code has 2 test cases for
 You can run them via the following commands:
 
 ./reg_limit_test
+
 ./login_limit_test
 
 
