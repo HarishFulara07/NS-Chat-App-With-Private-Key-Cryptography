@@ -2,7 +2,7 @@
 
 ### Assignment Description
 
-This assignment builds upon the chat server (You can find basic chat server application [here] (https://github.com/HarishFulara07/NS-Basic-Web-Chat-Application)) to add additional functionality of authentication and authorization to chat messages.
+This assignment builds upon the chat server (you can find basic chat server application [here] (https://github.com/HarishFulara07/NS-Basic-Web-Chat-Application)) to add additional functionality of authentication and authorization to chat messages.
 
 Two users – lets say **Alice** and **Bob** who are both online could chat with one another enabling confidentiality and authentication. To do so you need to implement a **KDC (Key Distribution Center)** like functionality in the chat server. Alice communicates with the KDC to negotatiate a shared secret with Bob which it uses for communicating secretly and may addtionally also sign the messages (through some form of message authentication code (MAC)) to prevent against unwanted tampering. You are free to implement your own protocol to achieve the same. It may be derived from Needham Schroeder (NS) scheme or may involve more complex schemes such as those observed in Kerberos. To encrypt messages you may use openssl EVP functions. The shared key for each user (Alice and Bob) may be derived from their passphrases by using openssl **PBKDF functions**, that takes as input a passphrase and outputs a pseudo-random sequence of bytes.
 
