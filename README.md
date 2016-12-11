@@ -1,17 +1,20 @@
 # Chat App With Private Key Cryptography
 
-** Assignment Description **
+### Assignment Description
 
 This assignment builds upon the chat server (You can find basic chat server application [here] (https://github.com/HarishFulara07/NS-Basic-Web-Chat-Application)) to add additional functionality of authentication and authorization to chat messages.
 
 Two users – lets say **Alice** and **Bob** who are both online could chat with one another enabling confidentiality and authentication. To do so you need to implement a **KDC (Key Distribution Center)** like functionality in the chat server. Alice communicates with the KDC to negotatiate a shared secret with Bob which it uses for communicating secretly and may addtionally also sign the messages (through some form of message authentication code (MAC)) to prevent against unwanted tampering. You are free to implement your own protocol to achieve the same. It may be derived from Needham Schroeder (NS) scheme or may involve more complex schemes such as those observed in Kerberos. To encrypt messages you may use openssl EVP functions. The shared key for each user (Alice and Bob) may be derived from their passphrases by using openssl **PBKDF functions**, that takes as input a passphrase and outputs a pseudo-random sequence of bytes.
 
-** Assignment Summary **
+### Assignment Summary
 
 Alice requests the KDC to communicate with Bob and a protocol ensues between Alice and the KDC that results in the derivation of the session key which Alice and Bob eventually use to communicate. Addtionally the messages may involve MAC to protect these messages against unwanted tampering. The scheme works to protect online chat messages between two parties ONLY.
 
 **Note**: You can find detailed information in [Report.pdf] (https://github.com/HarishFulara07/NS-Chat-App-With-Private-Key-Cryptography/blob/master/report/Report.pdf) inside **report** directory.
 
+<br>
+
+## How to run the application?
 
 <------Compile the code using the following command------>
 
