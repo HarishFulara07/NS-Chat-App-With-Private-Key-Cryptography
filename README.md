@@ -26,7 +26,7 @@ make
 
 ./kdc
 
-<------Then run the server using the following command------>
+<------Then run the server in a new termianl window using the following command------>
 
 ./server
 
