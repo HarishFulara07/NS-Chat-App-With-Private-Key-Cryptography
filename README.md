@@ -10,6 +10,8 @@ Two users – lets say **Alice** and **Bob** who are both online could chat with
 
 Alice requests the KDC to communicate with Bob and a protocol ensues between Alice and the KDC that results in the derivation of the session key which Alice and Bob eventually use to communicate. Addtionally the messages may involve MAC to protect these messages against unwanted tampering. The scheme works to protect online chat messages between two parties ONLY.
 
+<br>
+
 **Note**: You can find detailed information in [Report.pdf] (https://github.com/HarishFulara07/NS-Chat-App-With-Private-Key-Cryptography/blob/master/report/Report.pdf) inside **report** directory.
 
 <br>
